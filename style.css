@@ -1,6 +1,43 @@
 body{
-    font-family:"Times New Roman",serif;
-    font-size:32px;
-    color:rosybrown;
-    background-color:linear-gradient(to right ,#FAD0C4,#FFD1FF);
+    font-family: "Times New Roman", serif;
+    font-size: 18px;
+    color: rosybrown;
+    min-height: 100vh;
+    background: linear-gradient(
+        to bottom,
+        #ffffff 0%,
+        #f4e6ec 30%,
+        #c07a8e 65%,
+        #732c3f 100%
+    );
+    background-attachment: fixed;
+}
+.input-box {
+    position: relative;
+    margin: 25px 0;
+}
+.input-box input {
+    width: 80%;
+    padding: 14px 12px;
+    font-size: 16px;
+    background: transparent;
+    border: 2px solid rosybrown;
+    border-radius: 6px;
+    outline: none;
+}
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 14px;
+    color: rosybrown;
+    background: #f4e6ec;  
+    padding: 0 6px;
+    transform: translateY(-50%);
+    transition: 0.3s ease;
+    pointer-events: none;
+}
+.input-box input:focus + label,
+.input-box input:valid + label {
+    top: -8px;
+    font-size: 13px;
 }

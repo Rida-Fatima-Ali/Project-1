@@ -3,15 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form action ="signup.php">
-        <input type="text" name="username" placeholder="Enter Username"><br><br>
-        <input type="email" name="email" placeholder="Enter Email"><br><br>
-        <input type="password" name="password" placeholder="Enter Password"><br><br>
+
+<form action="signup.php">
+    <fieldset>
+        <legend>Create An Account</legend>
+
+        <div class="input-box">
+            <input type="text" name="username" required>
+            <label>Username</label>
+        </div>
+
+        <div class="input-box">
+            <input type="email" name="email" required>
+            <label>Email</label>
+        </div>
+
+        <div class="input-box">
+            <input type="password" name="password" required>
+            <label>Password</label>
+        </div>
+
         <button type="submit">Create Account</button>
-    </form>
+    </fieldset>
+</form>
+
 </body>
 </html>
