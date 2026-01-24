@@ -8,7 +8,8 @@ $result=mysqli_query($conn,"SELECT * FROM users WHERE email='$email'");
 $user=mysqli_fetch_assoc($result);
 if($user && password_verify($password,$user['password'])){
     $_SESSION['user_id']=$user['id'];
-    header("location: ../dashboard.php");
+    header("Location: /Project-1/dashboard.php");
+    exit();
 }else{
     echo "Invalid Login";
 }

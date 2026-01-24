@@ -7,6 +7,7 @@ $password=password_hash($_POST['password'],PASSWORD_DEFAULT);
 $sql="INSERT INTO users (username,email,password) VALUES ('$username','$email','$password')";
 
 if(mysqli_query($conn,$sql)){
-    header("location: ../index.html");
+    header("Location: /Project-1/index.html");
+    exit();
 }
 ?>
