@@ -2,3 +2,5 @@
 This is my first repo
 <br>
 Author:Rida
+<br>
+This Project's purpose was to connect frontend with the backend !!
