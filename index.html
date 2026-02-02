@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body style="background:linear-gradient(
     to bottom,
@@ -12,9 +13,14 @@
     #c7d6e6 65%,
     #9fb6cf 100%
 );">
-<div class="div">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+<div class="div" data-aos="fade-right" data-aos-duration="800" data-aos-easing="linear">
     <p>Welcome <span class="heart">&#10084;</span></p>
 </div>
+<div data-aos="fade-left" data-aos-duration="800" data-aos-easing="ease-in-sine">
 <form action="login.php" method="POST">
     <fieldset>
         <legend>Fill Your Credentials</legend>
@@ -31,6 +37,8 @@
         <button type="submit">Create Account</button>
     </fieldset>
 </form>
+</div>
+
 
 </body>
 </html>

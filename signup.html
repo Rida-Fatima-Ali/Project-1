@@ -4,12 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-<div class="div">
+<div class="div" data-aos="fade-right" data-aos-duration="800" data-aos-easing="linear">
     <p>Welcome <span class="heart">&#10084;</span></p>
 </div>
-<form action="signup.php" method="POST">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+<form action="signup.php" method="POST" data-aos="fade-left" data-aos-duration="800" data-aos-easing="ease-in-sine">
     <fieldset>
         <legend>Create An Account</legend>
         <div class="input-box">
